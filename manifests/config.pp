@@ -1,6 +1,5 @@
 class sublimetext2::config
 {
-
   # hack since I'm having trouble with apt::ppa
   exec { 'add-apt-repository-ppa:webupd8team/sublime-text-2':
     command => '/usr/bin/add-apt-repository ppa:webupd8team/sublime-text-2',
@@ -13,5 +12,4 @@ class sublimetext2::config
     mode    => '0775',
     recurse => true
   }
-
 }
