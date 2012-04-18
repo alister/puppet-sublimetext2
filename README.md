@@ -18,7 +18,9 @@ Released under the terms of Apache 2 License.
 
 ### USAGE - Overrides and Customizations
 
-Install to a given path, and then add a plugin 
+Install to a given path, and then add a plugin. 
+
+NOTE: Until the editor has been started, the configuration directory does not exist. SO, the plugin portion of the manifests won't work till sublime-text has been run at least once.
 
     # these must be set
     class { sublimetext2::params:
