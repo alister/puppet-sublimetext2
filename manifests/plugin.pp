@@ -15,5 +15,6 @@ define sublimetext2::plugin (
     cwd     => $sublimetext2::params::installBasePath,
     user    => $sublimetext2::params::userName,
     require => Class['sublimetext2::packages'],
+    onlyif  => "[ -d ${sublimetext2::params::installBasePath} ]",
   }
 }
